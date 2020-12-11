@@ -11,3 +11,8 @@ test('Golden Ratio', () => {
 test('Testing Degrees to Radians', () => {
     expect(lib.degToRad(1)).toBe(0.017453292519943295)
 })
+
+
+test('Testing Radians to Degrees', () => {
+    expect(lib.radToDeg(1)).toBe(57.29577951308232)
+})
