@@ -5,6 +5,7 @@ const lib = require('../math')
 
 test('Golden Ratio', () => {
     expect(lib.goldenRatio(1)).toBe(1.61803398875)
+
 })
 
 
@@ -19,4 +20,11 @@ test('Testing Radians to Degrees', () => {
 
 test("Testing value to dollar", () => {
     expect(lib.valueToDollar(23)).toBe('23.00')
+    expect(lib.valueToDollar(3)).toBe('3.00')
+    expect(lib.valueToDollar(0)).toBe('0.00')
+    expect(lib.valueToDollar(203)).toBe('203.00')
+})
+
+test("Testing random number", () => {
+    expect(lib.randomNumber(1,1)).toBe('1')
 })
