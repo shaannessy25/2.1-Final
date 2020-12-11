@@ -1,18 +1,9 @@
-const { pi } = require("mathjs")
 
 function goldenRatio(num) {
-    return num * 1.61803398875
+    return num * 1.61803398875;
 }
-
 function degToRad(number) {
-    return number * (pi/180)
+    return number * (Math.PI / 180);
 }
-
-
-console.log(degToRad(1))
-
-
-
-
-
-module.exports.goldenRatio = goldenRatio
+module.exports.goldenRatio = goldenRatio;
+module.exports.degToRad = degToRad;
