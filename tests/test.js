@@ -16,3 +16,7 @@ test('Testing Degrees to Radians', () => {
 test('Testing Radians to Degrees', () => {
     expect(lib.radToDeg(1)).toBe(57.29577951308232)
 })
+
+test("Testing value to dollar", () => {
+    expect(lib.valueToDollar(23)).toBe('23.00')
+})

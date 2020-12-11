@@ -13,8 +13,11 @@ function radToDeg(number: number): number {
 }
 
 
-
+function valueToDollar(number: number): string{
+    return `${number}.00`
+}
 
 module.exports.goldenRatio = goldenRatio
 module.exports.degToRad = degToRad
 module.exports.radToDeg = radToDeg
+module.exports.valueToDollar = valueToDollar
